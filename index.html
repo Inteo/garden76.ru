@@ -20,7 +20,6 @@
   <script src="f/js/jquery.touchSwipe.min.js"></script>
   <script src="f/js/jquery.transit.min.js"></script>
   <script src="f/js/common.js"></script>
-  <script src="f/js/less-1.7.3.min.js" type="text/javascript"></script>
   <link rel="stylesheet/less" type="text/css" href="f/less/style.less">
   
   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
@@ -43,10 +42,6 @@
 			prev: '.about-center__partners__slider__prev'
 		});	
 	});
-	
-  </script>
-  
-  <script>
   
 	function switch_map(n){
 		if(n == 1){
@@ -68,18 +63,7 @@
 	function scroll_down_about_center(){
 	
 		$(".about-center__more").hide();
-		$(".about-center__detail").animate({
-			height: 1400
-		}, 500);
-	}
-	
-	function prof_center_main_back_hover(n){
-		if(n == 1){
-			$('.prof-center__main__back-image').addClass('prof-center__main__back-image_hover');
-		}
-		else if(n == 0){
-			$('.prof-center__main__back-image').removeClass('prof-center__main__back-image_hover');
-		}
+		$(".about-center__detail").addClass("about-center__detail_active");
 	}
   </script>
 </head>
@@ -102,6 +86,12 @@
 			<div style = "clear: both"></div>
 			<div class = "header__main">
 				<a href = "#"><img class = "header__main__logo" src = "f/i/header-logo.png"></img></a>
+				<div class = "header__phone-wrap">
+					<span class = "header__phone-wrap__code">(4852)</span>
+					<span class = "header__phone-wrap__phone">68-06-16</span>
+					<p class = "header__map"><a href = "#" class = "header__map__link">Как проехать</a></p>
+				</div>
+
 				<ul class = "header__menu">
 					<li class = "header__menu__item header__menu__item_1">
 						<a class = "header__menu__link " href = "#">Растения</a>
@@ -115,8 +105,7 @@
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Рулонный газон</a></li>
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Рассада</a></li>
 						</ul>
-					</li>
-					<li class = "header__menu__item  header__menu__item_2">
+					</li><li class = "header__menu__item  header__menu__item_2">
 						<a class = "header__menu__link" href = "#">Товары для ухода за садом</a>
 						<ul class = "header__sub-menu">
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Хвойные растения</a></li>
@@ -128,8 +117,7 @@
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Рулонный газон</a></li>
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Рассада</a></li>
 						</ul>
-					</li>
-					<li class = "header__menu__item header__menu__item_3">
+					</li><li class = "header__menu__item header__menu__item_3">
 						<a class = "header__menu__link " href = "#">Обустройство сада</a>
 						<ul class = "header__sub-menu">
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Хвойные растения</a></li>
@@ -141,8 +129,7 @@
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Рулонный газон</a></li>
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Рассада</a></li>
 						</ul>
-					</li>
-					<li class = "header__menu__item  header__menu__item_4">
+					</li><li class = "header__menu__item  header__menu__item_4">
 						<a class = "header__menu__link" href = "#">Ландшафтные материалы</a>
 						<ul class = "header__sub-menu">
 							<li class = "header__sub-menu__item"><a href = "#" class = "header__sub-menu__link">Хвойные растения</a></li>
@@ -156,12 +143,6 @@
 						</ul>
 					</li>
 				</ul>
-				<div class = "header__phone-wrap">
-					<span class = "header__phone-wrap__code">(4852)</span>
-					<span class = "header__phone-wrap__phone">68-06-16</span>
-				</div>
-				<div style = "clear: both"></div>
-			<span class = "header__map"><a href = "#" class = "header__map__link">Как проехать</a></span>
 			</div>			
 		</div>
 		<div class = "main-banner">
@@ -211,45 +192,36 @@
 				<span class = "prof-center__main__address">ОТК «Тандем», ул. Полушкина роща, 9</span>
 				<span class = "prof-center__main__address"> ТРК "Альтаир", Ленинградский проспект, 123</span>
 				<div class = "prof-center__main__links">
-					<span class = "prof-center__main__map" onmouseover = "prof_center_main_back_hover(1);" onmouseout = "prof_center_main_back_hover(0);">
+					<span class = "prof-center__main__map">
 						<a href = "#" class = "prof-center__main__map__link">Как проехать</a>
 					</span>
-					<span class = "prof-center__main__catalog" onmouseover = "prof_center_main_back_hover(1);" onmouseout = "prof_center_main_back_hover(0);">
+					<span class = "prof-center__main__catalog">
 						<a href = "#" class = "prof-center__main__catalog__link">В каталог</a>
 					</span>
 				</div>
-				<img src = "f/i/prof-center-back.png" class = "prof-center__main__back-image"/>
 			</div>
 			<div class = "prof-center__detail">
-				<p class = "prof-center__detail__text"><strong>GARDEN ROSE </strong>— уникальный формат садовых розничных магазинов, где основным товаром являются растения для сада, а хорошее позитивное настроение посетителей — главная цель  команды садового центра.</p>
-				<p class = "prof-center__detail__text prof-center__detail__text_right">Благоухающие розы,  аристократичные туи,  белоснежные красавицы-спиреи — более 10 000 видов и сортов садовых растений на площади около 1000 м2. </p>
+				<p class = "prof-center__detail__text"><strong>GARDEN ROSE </strong>— уникальный формат садовых розничных магазинов, где основным товаром являются растения для сада, а хорошее позитивное настроение посетителей — главная цель  команды садового центра.</p><p class = "prof-center__detail__text">Благоухающие розы,  аристократичные туи,  белоснежные красавицы-спиреи — более 10 000 видов и сортов садовых растений на площади около 1000 м2. </p>
 			</div>
 		</div>
-		<div style = "clear: both"></div>
 		<div class = "about-center">
-			<span class = "about-center__title">О садовом центре «Garden Rose»</span>
-			<div style = "clear: both"></div>
+			<p class = "about-center__title">О садовом центре «Garden Rose»</p>
 			<p class = "about-center__text">Один раз побывав в садовом центре Garden Rose, понимаешь, что общение с живыми и красочно цветущими растениями не только  настраивает на позитивный лад, но и прибавляет жизненной энергии и хорошего настроения.
-			</p>
-			<p class = "about-center__text about-center__text_right">Именно такое настроение мы стараемся создать в нашем Садовом  центре, который создан ландшафтными специалистами компании Garden Style, теми, кто более десятилетия создает Сады и не понаслышке знает об особенностях  каждого растения.
+			</p><p class = "about-center__text">Именно такое настроение мы стараемся создать в нашем Садовом  центре, который создан ландшафтными специалистами компании Garden Style, теми, кто более десятилетия создает Сады и не понаслышке знает об особенностях  каждого растения.
 			</p>
 			<div style = "clear: both"></div>
 			<span class = "about-center__more"><a  class = "about-center__more__link" onclick = "scroll_down_about_center()">Подробнее</a></span>
 			<div class = "about-center__detail">
-				<div class = "about-center__btn about-center__btn_blog">
-					<a href = "#" class = "about-center__btn__link"><span class = "about-center__btn__title">Блог профессионалов</span></a>
+				<div class = "about-center__btn about-center__btn">
+					<a href = "#" class = "about-center__btn__link"><i class="icon-blog"></i><span>Блог профессионалов</span></a>
 					<span class = "about-center__btn__text">читайте интересные статьи от лучших профессионалов в сфере садоводства</span>
-				</div>
-				<div class = "about-center__btn about-center__btn_video">
-					<a href = "#" class = "about-center__btn__link"><span class = "about-center__btn__title">Видео о садовом центре</span></a>
+				</div><div class = "about-center__btn about-center__btn">
+					<a href = "#" class = "about-center__btn__link"><i class="icon-video"></i><span>Видео о садовом центре</span></a>
 					<span class = "about-center__btn__text">проникнитесь атмосферой любви и заботы к растениям и домашнему уюту вместе с нами!</span>
 				</div>
-				
 				<p class = "about-center__text">Именно поэтому в нашем центре основной товар – это посадочный материал из лучших российских и зарубежных питомников,  декоративные, цветочные, плодовые,  как традиционно популярные сорта, так и редкие новинки, модные сегодня в Европе.  Товары же для ухода за садом, которые  делают жизнь наших растений комфортной и здоровой, разные  декоративные штучки,  ландшафтные материалы,  дополняющие садовые композиции,  мы относим к сопутствующей группе.   
+				</p><p class = "about-center__text">При этом наша основная задача – помочь нашим покупателям создать на своем загородном участке частичку своего Сада, сада своей МЕЧТЫ.  Мечты и возможности, конечно, у всех разные…  Поэтому и растения представлены в нашем садовом центре в различных ценовых категориях – от небольшого горшка  и высоты до крупных экземпляров в контейнерах. Наши специалисты очень тщательно ухаживают за живым товаром, и вы можете быть уверены, что, следуя рекомендациям наших продавцов-консультантов.
 				</p>
-				<p class = "about-center__text about-center__text_right">При этом наша основная задача – помочь нашим покупателям создать на своем загородном участке частичку своего Сада, сада своей МЕЧТЫ.  Мечты и возможности, конечно, у всех разные…  Поэтому и растения представлены в нашем садовом центре в различных ценовых категориях – от небольшого горшка  и высоты до крупных экземпляров в контейнерах. Наши специалисты очень тщательно ухаживают за живым товаром, и вы можете быть уверены, что, следуя рекомендациям наших продавцов-консультантов.
-				</p>
-				<div style = "clear: both"></div>
 				<div class = "about-center__slider">
 					<div class = "about-center__slider__wrap">
 						<ul class = "about-center__slider__content">
@@ -257,22 +229,17 @@
 							<li class = "about-center__slider__item"><img src = "f/i/main-slides/slide3.jpg" class = "about-center__slider__image"/></li>
 							<li class = "about-center__slider__item"><img src = "f/i/main-slides/slide1.jpg" class = "about-center__slider__image"/></li>
 						</ul>
-						
 					</div>
 					<span class="about-center__slider__prev"><a class = "about-center__slider__prev__link">Предыдущая</a></span>
 					<span class="about-center__slider__next"><a class = "about-center__slider__next__link">Следующая</a></span>
 				</div>
-				
 				<p class = "about-center__text">Мы считаем, что сегодня, когда садоводство в нашей стране выходит на новый европейский уровень, когда мы хотим видеть за окном не просто огород, а уютный и комфортный  Сад,  МИССИЯ  нашей компании заключается именно в распространении «вируса» ландшафтной культуры,  в развитии садового направления как отрасли дизайна и эстетики, делающей нашу жизнь прекрасней.  Этому способствуют и традиционные бесплатные мастер-классы для посетителей нашего садового центра, и особый подход наших сотрудников к своей профессии. Мы знаем о наших растениях все, или почти все,  и готовы поделиться с покупателями своими знаниями.  
+				</p><p class = "about-center__text about-center__text_right">И, конечно, наша визитная карточка – это РОЗЫ! Мы стараемся радовать покупателей не только традиционными недорогими  саженцами, но и растениями известных мировых брендов - английского питомника David Austin (Дэвид Остин),  французского питомника Meilland , розами Kordes из Германии.</br></br>Акции, подарочные купоны, письменные рекомендации,- все в нашем Садовом центре направлено на то, чтобы посетители приходили к нам СНОВА и СНОВА  за энергией и хорошим настроением!
 				</p>
-				<p class = "about-center__text about-center__text_right">И, конечно, наша визитная карточка – это РОЗЫ! Мы стараемся радовать покупателей не только традиционными недорогими  саженцами, но и растениями известных мировых брендов - английского питомника David Austin (Дэвид Остин),  французского питомника Meilland , розами Kordes из Германии.</br></br>Акции, подарочные купоны, письменные рекомендации,- все в нашем Садовом центре направлено на то, чтобы посетители приходили к нам СНОВА и СНОВА  за энергией и хорошим настроением!
-				</p>
-				<div style = "clear: both"></div>
 				<div class = "about-center__partners">
 					<span class = "about-center__partners__title">Наши партнеры</span>
 					<span class = "about-center__partners__separator"></span>
 				</div>
-				
 				<div class = "about-center__partners__slider">
 					<div class = "about-center__partners__slider__wrap">
 						<ul class = "about-center__partners__slider__content">
@@ -298,39 +265,32 @@
 				</div>		
 			</div>
 		</div>
-		<div style = "clear: both"></div>
 		<div class = "bottom-menu-wrap">
 			<ul class = "bottom-menu">
 				<li class = "bottom-menu__item">
-					<a href = "#" class = "bottom-menu__link"><span class = "bottom-menu__title bottom-menu__title_1">Мастер-классы</span></a>
+					<a href = "#" class = "bottom-menu__link"><i class = "bottom-icon bottom-icon_1"></i>Мастер-классы</a>
 					<span class = "bottom-menu__text">каждую Сб бесплатные мастер кассы по садоводству</span>
-				</li>
-				<li class = "bottom-menu__item">
-					<a href = "#" class = "bottom-menu__link"><span class = "bottom-menu__title bottom-menu__title_2">Уход за растениями</span></a>
+				</li><li class = "bottom-menu__item">
+					<a href = "#" class = "bottom-menu__link"><i class = "bottom-icon bottom-icon_2"></i>Уход за растениями</a>
 					<span class = "bottom-menu__text">следите за актуальной информацией в разгар сезона</span>
-				</li>
-				<li class = "bottom-menu__item">
-					<a href = "#" class = "bottom-menu__link"><span class = "bottom-menu__title bottom-menu__title_3">Отзывы</span></a>
+				</li><li class = "bottom-menu__item">
+					<a href = "#" class = "bottom-menu__link"><i class = "bottom-icon bottom-icon_3"></i>Отзывы</a>
 					<span class = "bottom-menu__text">читайте реальные мнения покупателей о нашей работе</span>
-				</li>
-				<li class = "bottom-menu__item">
-					<a href = "#" class = "bottom-menu__link"><span class = "bottom-menu__title bottom-menu__title_4">Услуги</span></a>
+				</li><li class = "bottom-menu__item">
+					<a href = "#" class = "bottom-menu__link"><i class = "bottom-icon bottom-icon_4"></i>Услуги</a>
 					<span class = "bottom-menu__text">ландшафтный дизайн, инженерное обустройство, озеленение, уход за садом</span>
-				</li>
-				<li class = "bottom-menu__item">
-					<a href = "#" class = "bottom-menu__link"><span class = "bottom-menu__title bottom-menu__title_5">Подарочные сертификаты</span></a>
+				</li><li class = "bottom-menu__item">
+					<a href = "#" class = "bottom-menu__link"><i class = "bottom-icon bottom-icon_5"></i>Подарочные сертификаты</a>
 					<span class = "bottom-menu__text">лучший подарок для людей, увлеченных садоводством</span>
 				</li>
 			</ul>
 		</div>
-		
 		<div class = "bottom-map">
 			<span class = "bottom-map__title">Где нас найти?</span>
 			<div class = "bottom-map__bookmark bottom-map__bookmark_center bottom-map__bookmark_active" >
 				<a  class = "bottom-map__bookmark__link" onclick = "switch_map(1);"><span class = "bottom-map__bookmark__title">Садовый центр</span></a>
 				<span class = "bottom-map__bookmark__detail">ОТК «Тандем», ул. Полушкина роща, 9 Пн-Вс 9:00-20:00,  (4852) <strong>68-06-16</strong></span>
-			</div>
-			
+			</div>		
 			<div class = "bottom-map__bookmark bottom-map__bookmark_store" >
 				<a  class = "bottom-map__bookmark__link" onclick = "switch_map(2);"><span class = "bottom-map__bookmark__title">Магазин</span></a>
 				<span class = "bottom-map__bookmark__detail">ОТК «Тандем», ул. Полушкина роща, 9 Пн-Вс 9:00-20:00,  (4852) <strong>68-06-16</strong></span>
@@ -345,7 +305,6 @@
 				</div>
 			</div>
 		</div>
-		
 		<div class = "footer">
 			<ul class = "main-menu main-menu_bottom">
 				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">О садовом центре</a></li>
@@ -353,7 +312,7 @@
 				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">Доставка</a></li>
 				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">Услуги</a></li>
 				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">Отзывы</a></li>
-				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">Энциклопедия</a></li>
+				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">Блог профессионалов</a></li>
 				<li class = "main-menu__item"><a href = "#" class = "main-menu__link">Контакты</a></li>
 			</ul>
 			<span class = "made-by">Создание сайта — <a class = "made-by__link" href = "#">Inteo</a></span>
