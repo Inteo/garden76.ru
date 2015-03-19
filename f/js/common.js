@@ -349,3 +349,19 @@ $(document).ready(function(){
 	});	
 	
 });
+function switch_map(n){
+	if(n == 1){
+		$('.bottom-map__bookmark_center').addClass('bottom-map__bookmark_active');
+		$('.bottom-map__bookmark_store').removeClass('bottom-map__bookmark_active');
+		
+		$('.bottom-map__content_1').addClass('bottom-map__content_active');
+		$('.bottom-map__content_2').removeClass('bottom-map__content_active');
+	}
+	if(n == 2){
+		$('.bottom-map__bookmark_store').addClass('bottom-map__bookmark_active');
+		$('.bottom-map__bookmark_center').removeClass('bottom-map__bookmark_active');
+		
+		$('.bottom-map__content_2').addClass('bottom-map__content_active');
+		$('.bottom-map__content_1').removeClass('bottom-map__content_active');
+	}
+}
