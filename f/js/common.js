@@ -365,3 +365,13 @@ function switch_map(n){
 		$('.bottom-map__content_1').removeClass('bottom-map__content_active');
 	}
 }
+$(function(){
+	$('.b-spinner .b-count-btn:first-of-type').on('click', function() {
+    $(this).closest(".b-spinner").find('input').val( parseInt($(this).closest(".b-spinner").find('input').val(), 10) - 1);
+    return false;
+  });
+  $('.b-spinner .b-count-btn:last-of-type').on('click', function() {
+    $(this).closest(".b-spinner").find('input').val( parseInt($(this).closest(".b-spinner").find('input').val(), 10) + 1);
+    return false;
+  });
+})

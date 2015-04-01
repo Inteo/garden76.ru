@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <link rel="stylesheet" href="f/css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="f/css/style.css">
   <link rel="stylesheet" href="f/css/normalize.css">
   <!--[if lte IE 9]><link rel="stylesheet" href="f/css/ie.css"><![endif]-->
- <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
- <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="f/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
   <link rel="shortcut icon" href="favicon.ico">
   <script src="f/js/jquery-1.10.2.min.js"></script>
@@ -19,10 +20,36 @@
   <script src="f/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
   <script src="f/js/jquery.touchSwipe.min.js"></script>
   <script src="f/js/jquery.transit.min.js"></script>
+  <script src="f/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="f/js/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="f/js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="f/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="f/js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="f/js/gallery.js"></script>
   <script src="f/js/common.js"></script>
   <link rel="stylesheet/less" type="text/css" href="f/less/style.less">
   
   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				<div class="rg-image-holder">
+					<div class="rg-image"></div>
+					<div class="rg-loading"></div>
+					<div class="rg-caption-wrapper">
+						<div class="rg-caption" style="display:none;">
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
 </head>
 
 <body>
@@ -109,11 +136,15 @@
 					<li class="b-submenu__item b-submenu__item_1 b-submenu__item_active">
 						<a href="#" class="b-submenu__link">Лиственные деревья <br>и кустарники</a>
 						<div class="b-submenu__inner">
-							<ul>
+							<ul class="mCustomScrollbar">
 								<li><a href="#">Айва</a><span>(8)</span></li>
 								<li><a href="#">Акация</a><span>(4)</span></li>
 								<li><b>Барбарис</b><span>(28)</span></li>
 								<li><a href="#">Береза</a><span>(1)</span></li>
+								<li><a href="#">Бересклет</a><span>(6)</span></li>
+								<li><a href="#">Бирючина</a><span>(10)</span></li>
+								<li><a href="#">Боярышник</a><span>(6)</span></li>
+								<li><a href="#">Буддлея</a><span>(10)</span></li>
 								<li><a href="#">Бересклет</a><span>(6)</span></li>
 								<li><a href="#">Бирючина</a><span>(10)</span></li>
 								<li><a href="#">Боярышник</a><span>(6)</span></li>
@@ -137,6 +168,119 @@
 							<li><a href="#">Лиственные деревья и кустарники</a></li>
 							<li><span>Барбарис</span></li>
 						</ul>
+					</div>
+					<div class="b-goods">
+						<p class="b-catalog__title b-catalog__title_bottom_10">Барбарис Тунберга «Арлекин»</p>
+						<p class="b-catalog__subtitle">Berberis Thunbergii Harlequin</p>
+						<div class="b-goods__photo">
+							<div id="rg-gallery" class="rg-gallery">
+								<div class="rg-thumbs">
+									<div class="es-carousel-wrapper">
+										<div class="es-carousel">
+											<ul>
+												<li><a href="#"><img src="f/i/goods-slider/1.jpg" data-large="f/i/goods-slider/1.jpg" alt="image01" data-description="Berberis Thunbergii Harlequin"/></a></li><li>
+												<a href="#"><img src="f/i/goods-slider/2.jpg" data-large="f/i/goods-slider/2.jpg" alt="image02" data-description="Berberis Harlequin Thunbergii "/></a></li><li>
+												<a href="#"><img src="f/i/goods-slider/1.jpg" data-large="f/i/goods-slider/1.jpg" alt="image03" data-description="Thunbergii Berberis  Harlequin"/></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><div class="b-goods__detail">
+							<p class="b-goods__detail-title">Синонимы</p>
+							<p class="b-goods__detail-text">Барбарис Тунберга</p>
+							<p class="b-goods__detail-title">Форма и крона</p>
+							<p class="b-goods__detail-text">колючий кустарник, куст компактный, сначала прямой, позже зонтиковидной формы</p>
+							<p class="b-goods__detail-title">Размер взрослого растения</p>
+							<p class="b-goods__detail-text">Высота 1,5–2м, ширина 1–1,5м </p>
+							<p class="b-goods__detail-title">Декоративность</p>
+							<p class="b-goods__detail-text">зеленые листья осенью окрашиваются в пурпурно-оранжевый цвет</p>
+							<p class="b-goods__detail-title">Цветение и плоды</p>
+							<p class="b-goods__detail-text">цветки желтые, появляются в мае, плоды кораллово-красные, овальные</p>
+							<p class="b-goods__detail-title">Зимостокость</p>
+							<p class="b-goods__detail-text">устойчив к холодам</p>
+						</div>
+						<p class="b-goods__title">Размеры и цена</p>
+						<div class="b-goods__table">
+							<div class="b-goods__table-head">
+								<div class="b-goods__table-cell">
+									Высота, <span>см</span>
+								</div><div class="b-goods__table-cell">
+									Ширина, <span>см</span>
+								</div><div class="b-goods__table-cell">
+									Обхват<br> ствола, <span>см</span>
+								</div><div class="b-goods__table-cell">
+									Страна <br>происхождения
+								</div><div class="b-goods__table-cell">
+									Цена
+								</div><div class="b-goods__table-cell">
+									Количество
+								</div>
+							</div>
+							<a href="#" class="b-goods__table-row">
+								<div class="b-goods__table-cell">
+									60-90
+								</div><div class="b-goods__table-cell">
+									60-90
+								</div><div class="b-goods__table-cell">
+									10
+								</div><div class="b-goods__table-cell">
+									Польша
+								</div><div class="b-goods__table-cell b-goods__table-cell_price">
+									350 <b class="rub">&#8399;</b>
+								</div><div class="b-goods__table-cell b-goods__table-cell_count b-spinner" onclick="return false;">
+									<span class="b-count-btn">-</span>
+										<input class="b-count-input" type="text" value="1">
+									<span class="b-count-btn">+</span>
+								</div><div class="b-goods__table-cell" onclick="return false;">
+									<button type="" class="b-cart-btn">В корзину</button>
+								</div>
+							</a>
+							<a href="#" class="b-goods__table-row">
+								<div class="b-goods__table-cell">
+									90-150
+								</div><div class="b-goods__table-cell">
+									90-150
+								</div><div class="b-goods__table-cell">
+									15
+								</div><div class="b-goods__table-cell">
+									Россия
+								</div><div class="b-goods__table-cell b-goods__table-cell_price">
+									650 <b class="rub">&#8399;</b>
+								</div><div class="b-goods__table-cell b-goods__table-cell_count b-spinner">
+									<span class="b-count-btn">-</span>
+										<input class="b-count-input" type="text" value="1" onclick="return false;">
+									<span class="b-count-btn">+</span>
+								</div><div class="b-goods__table-cell" onclick="return false;">
+									<button type="" class="b-cart-btn">В корзину</button>
+								</div>
+							</a>
+							<a href="#" class="b-goods__table-row">
+								<div class="b-goods__table-cell">
+									150-200
+								</div><div class="b-goods__table-cell">
+									150-200
+								</div><div class="b-goods__table-cell">
+									25
+								</div><div class="b-goods__table-cell">
+									Россия
+								</div><div class="b-goods__table-cell b-goods__table-cell_price">
+									1250 <b class="rub">&#8399;</b>
+								</div><div class="b-goods__table-cell b-goods__table-cell_count b-spinner" onclick="return false;">
+									<span class="b-count-btn">-</span>
+										<input class="b-count-input" type="text" value="1">
+									<span class="b-count-btn">+</span>
+								</div><div class="b-goods__table-cell" onclick="return false;">
+									<button type="" class="b-cart-btn">В корзину</button>
+								</div>
+							</a>
+						</div>
+						<p class="b-goods__title">Условия выращивания</p>
+						<p class="b-goods__text">Обычные почвы, предпочитает не очень сухие места; морозостоек, выносит засуху, устойчив в городском климате. </p>
+						<p class="b-goods__title">Особенности агротехники</p>
+						<p class="b-goods__text">Хорошо выдерживает стрижку. Рано весной проводится санитарная обрезка с удалением обмерзших, слабых и старых побегов. Рекомендуется проводить омолаживающую обрезку для поддержания кроныв декоративном состоянии с посадкой на пень.</p>
+						<p class="b-goods__title">Использование</p>
+						<p class="b-goods__text">Солитер на газоне, в рядовых и групповых посадках, как цветовой акцент в древесно-кустарниковых композициях, в стриженных и свободно растущих изгородях, бордюрах, в смешанных с многолетниками группах.</p>
 					</div>
 					<p class="b-catalog__title">Вам может потребоваться</p>
 					<div class="b-catalog__section">
