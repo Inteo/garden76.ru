@@ -50,8 +50,23 @@
 				</div>
 			</div>
 		</script>
+		<script>
+      $(document).ready(function(){
+        $(".mCustomScrollbar").mCustomScrollbar({
+        	scrollInertia: 150,
+        	callbacks:{
+					  onTotalScroll:function(){
+					    $(this).addClass("ended");
+					  },
+					  onTotalScrollBackOffset: 100,
+					  onTotalScrollBack:function(){
+					  	$(this).removeClass("ended");
+					  }
+					}
+        });
+      });
+		</script>
 </head>
-
 <body>
 	<div class="main-wrap">
 		<div class="b-content">
@@ -230,7 +245,7 @@
 									350 <b class="rub">&#8399;</b>
 								</div><div class="b-goods__table-cell b-goods__table-cell_count b-spinner" onclick="return false;">
 									<span class="b-count-btn">-</span>
-										<input class="b-count-input" type="text" value="1">
+										<input class="b-count-input" type="number" value="1">
 									<span class="b-count-btn">+</span>
 								</div><div class="b-goods__table-cell" onclick="return false;">
 									<button type="" class="b-cart-btn">В корзину</button>
@@ -249,7 +264,7 @@
 									650 <b class="rub">&#8399;</b>
 								</div><div class="b-goods__table-cell b-goods__table-cell_count b-spinner">
 									<span class="b-count-btn">-</span>
-										<input class="b-count-input" type="text" value="1" onclick="return false;">
+										<input class="b-count-input" type="number" value="1" onclick="return false;">
 									<span class="b-count-btn">+</span>
 								</div><div class="b-goods__table-cell" onclick="return false;">
 									<button type="" class="b-cart-btn">В корзину</button>
@@ -268,7 +283,7 @@
 									1250 <b class="rub">&#8399;</b>
 								</div><div class="b-goods__table-cell b-goods__table-cell_count b-spinner" onclick="return false;">
 									<span class="b-count-btn">-</span>
-										<input class="b-count-input" type="text" value="1">
+										<input class="b-count-input" type="number" value="1">
 									<span class="b-count-btn">+</span>
 								</div><div class="b-goods__table-cell" onclick="return false;">
 									<button type="" class="b-cart-btn">В корзину</button>

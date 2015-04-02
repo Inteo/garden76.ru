@@ -367,11 +367,21 @@ function switch_map(n){
 }
 $(function(){
 	$('.b-spinner .b-count-btn:first-of-type').on('click', function() {
-    $(this).closest(".b-spinner").find('input').val( parseInt($(this).closest(".b-spinner").find('input').val(), 10) - 1);
+		$val = $(this).closest(".b-spinner").find('input').val();
+		if($val > 1) 
+		{
+			$(this).closest(".b-spinner").find('input').val( parseInt($val, 10) - 1);
+		}
+		else if($val == "") 
+			$(this).closest(".b-spinner").find('input').val(1);
     return false;
   });
   $('.b-spinner .b-count-btn:last-of-type').on('click', function() {
-    $(this).closest(".b-spinner").find('input').val( parseInt($(this).closest(".b-spinner").find('input').val(), 10) + 1);
+    $val = $(this).closest(".b-spinner").find('input').val();
+    if($val != "") 
+			$(this).closest(".b-spinner").find('input').val( parseInt($val, 10) + 1);
+		else 
+			$(this).closest(".b-spinner").find('input').val(1);
     return false;
   });
 })
