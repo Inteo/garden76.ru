@@ -23,6 +23,26 @@
   <link rel="stylesheet/less" type="text/css" href="f/less/style.less">
   
   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+   <script>
+    $(function() {
+    $('.about-center__slider__content').carouFredSel({
+			next: '.about-center__slider__next',
+			prev: '.about-center__slider__prev'
+		});	
+		$('.about-center__partners__slider__content').carouFredSel({
+			items: 4,
+			scroll: {
+				items: 1,
+				timeoutDuration: 5000,
+				easing: "quadratic",
+				pauseOnHover: true
+			},
+			next: '.about-center__partners__slider__next',
+			prev: '.about-center__partners__slider__prev'
+		});	
+	});
+ 
+  </script>
 </head>
 
 <body>
@@ -46,8 +66,8 @@
 					<div class="header__phone-wrap">
 						<span class="header__phone-wrap__code">(4852)</span>
 						<span class="header__phone-wrap__phone">68-06-16</span>
-						<p class="header__address">Ярославль, Полушкина роща 9</p>
 						<!-- <p class="header__map"><a href="#" class="header__map__link">Как проехать</a></p> -->
+						<p class="header__address">Ярославль, Полушкина роща 9</p>
 					</div>
 
 					<ul class="header__menu">
@@ -103,157 +123,64 @@
 					</ul>
 				</div>			
 			</div>
-			<div class="b-catalog">
-				<ul class="b-submenu">
-					<li class="b-submenu__item b-submenu__item_1"><a href="#" class="b-submenu__link">Лиственные деревья <br>и кустарники</a></li>
-					<li class="b-submenu__item b-submenu__item_2 b-submenu__item_active">
-						<a href="#" class="b-submenu__link">Хвойные деревья <br>и кустарники</a>
-						<div class="b-submenu__inner">
-							<ul>
-								<li><a href="#">Ель</a><span>(8)</span></li>
-								<li><a href="#">Лиственница</a><span>(4)</span></li>
-								<li><a href="#">Можжевельник</a><span>(28)</span></li>
-								<li><a href="#">Пихта</a><span>(1)</span></li>
-								<li><a href="#">Сосна</a><span>(6)</span></li>
-								<li><a href="#">Туя западная</a><span>(10)</span></li>
+			<div class="about-center about-center_top_0">
+				<p class="about-center__title">О садовом центре «Garden Rose»</p>
+				<p class="about-center__text">Один раз побывав в садовом центре Garden Rose, понимаешь, что общение с живыми и красочно цветущими растениями не только  настраивает на позитивный лад, но и прибавляет жизненной энергии и хорошего настроения.
+				</p><p class="about-center__text">Именно такое настроение мы стараемся создать в нашем Садовом  центре, который создан ландшафтными специалистами компании Garden Style, теми, кто более десятилетия создает Сады и не понаслышке знает об особенностях  каждого растения.
+				</p>
+				<div style="clear: both"></div>
+				<div class="about-center__detail about-center__detail_active">
+					<div class="about-center__btn about-center__btn">
+						<a href="#" class="about-center__btn__link"><i class="icon-blog"></i><span>Блог профессионалов</span></a>
+						<span class="about-center__btn__text">читайте интересные статьи от лучших профессионалов в сфере садоводства</span>
+					</div><div class="about-center__btn about-center__btn">
+						<a href="#" class="about-center__btn__link"><i class="icon-video"></i><span>Видео о садовом центре</span></a>
+						<span class="about-center__btn__text">проникнитесь атмосферой любви и заботы к растениям и домашнему уюту вместе с нами!</span>
+					</div>
+					<p class="about-center__text">Именно поэтому в нашем центре основной товар – это посадочный материал из лучших российских и зарубежных питомников,  декоративные, цветочные, плодовые,  как традиционно популярные сорта, так и редкие новинки, модные сегодня в Европе.  Товары же для ухода за садом, которые  делают жизнь наших растений комфортной и здоровой, разные  декоративные штучки,  ландшафтные материалы,  дополняющие садовые композиции,  мы относим к сопутствующей группе.   
+					</p><p class="about-center__text">При этом наша основная задача – помочь нашим покупателям создать на своем загородном участке частичку своего Сада, сада своей МЕЧТЫ.  Мечты и возможности, конечно, у всех разные…  Поэтому и растения представлены в нашем садовом центре в различных ценовых категориях – от небольшого горшка  и высоты до крупных экземпляров в контейнерах. Наши специалисты очень тщательно ухаживают за живым товаром, и вы можете быть уверены, что, следуя рекомендациям наших продавцов-консультантов.
+					</p>
+					<div class="about-center__slider">
+						<div class="about-center__slider__wrap">
+							<ul class="about-center__slider__content">
+								<li class="about-center__slider__item"><img src="f/i/main-slides/slide4.jpg" class="about-center__slider__image"/></li>
+								<li class="about-center__slider__item"><img src="f/i/main-slides/slide3.jpg" class="about-center__slider__image"/></li>
+								<li class="about-center__slider__item"><img src="f/i/main-slides/slide1.jpg" class="about-center__slider__image"/></li>
 							</ul>
-						</div>	
-					</li>
-					<li class="b-submenu__item b-submenu__item_3"><a href="#" class="b-submenu__link">Многолетние  травянистые растения</a></li>
-					<li class="b-submenu__item b-submenu__item_4"><a href="#" class="b-submenu__link">Розы</a></li>
-					<li class="b-submenu__item b-submenu__item_5"><a href="#" class="b-submenu__link">Плодово-ягодные растения</a></li>
-					<li class="b-submenu__item b-submenu__item_6"><a href="#" class="b-submenu__link">Рассада</a></li>
-					<li class="b-submenu__item b-submenu__item_7"><a href="#" class="b-submenu__link">Семена газонных трав и сидератов</a></li>
-					<li class="b-submenu__item b-submenu__item_8"><a href="#" class="b-submenu__link">Рулонный газон</a></li>
-				</ul><div class="b-catalog__wrap">
-					<div class="b-breadcrumbs">
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Растения</a></li>
-							<li><span>Хвойные деревья и кустарники</span></li>
-						</ul>
-					</div>
-					<p class="b-catalog__title">Хвойные деревья и кустарники</p>
-					<div class="b-catalog__section">
-						<span class="b-catalog__sep"></span>
-						<div class="b-catalog__holder">
-							<div class="b-catalog__item b-catalog__item_descr">
-								<p class="b-catalog__item-title">Ель</p>
-								<p class="b-catalog__item-text">Род деревьев семейства Сосновые (Pinaceae). Ель может давать молодые побеги-клоны из корней погибшего дерева. Это старейший известный древесный организм на Земле.</p>
-								<a href="#" class="arrowed-link">Подробнее</a>
-							</div><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/1.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Glauca Globosa», Глаука Глобоза</span>
-									<span class="b-catalog__price">от <b>4100 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/2.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Glauca», Глаука</span>
-									<span class="b-catalog__price">от <b>3200 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a>
 						</div>
+						<span class="about-center__slider__prev"><a class="about-center__slider__prev__link">Предыдущая</a></span>
+						<span class="about-center__slider__next"><a class="about-center__slider__next__link">Следующая</a></span>
 					</div>
-					<div class="b-catalog__section">
-						<span class="b-catalog__sep b-catalog__sep_2"></span>
-						<div class="b-catalog__holder">
-							<div class="b-catalog__item b-catalog__item_descr">
-								<p class="b-catalog__item-title">Лиственница</p>
-								<p class="b-catalog__item-text">Самая распространённая порода деревьев на планете и в России. В Сибири и на Дальнем Востоке России занимает огромные площади, где произрастает от юга Приморья до северных границ.</p>
-								<a href="#" class="arrowed-link">Подробнее</a>
-							</div><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/1.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Glauca Globosa», Глаука Глобоза</span>
-									<span class="b-catalog__price">от <b>4100 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/2.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Glauca», Глаука</span>
-									<span class="b-catalog__price">от <b>3200 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a>
+					<p class="about-center__text">Мы считаем, что сегодня, когда садоводство в нашей стране выходит на новый европейский уровень, когда мы хотим видеть за окном не просто огород, а уютный и комфортный  Сад,  МИССИЯ  нашей компании заключается именно в распространении «вируса» ландшафтной культуры,  в развитии садового направления как отрасли дизайна и эстетики, делающей нашу жизнь прекрасней.  Этому способствуют и традиционные бесплатные мастер-классы для посетителей нашего садового центра, и особый подход наших сотрудников к своей профессии. Мы знаем о наших растениях все, или почти все,  и готовы поделиться с покупателями своими знаниями.  
+					</p><p class="about-center__text about-center__text_right">И, конечно, наша визитная карточка – это РОЗЫ! Мы стараемся радовать покупателей не только традиционными недорогими  саженцами, но и растениями известных мировых брендов - английского питомника David Austin (Дэвид Остин),  французского питомника Meilland , розами Kordes из Германии.</br></br>Акции, подарочные купоны, письменные рекомендации,- все в нашем Садовом центре направлено на то, чтобы посетители приходили к нам СНОВА и СНОВА  за энергией и хорошим настроением!
+					</p>
+					<div class="about-center__partners">
+						<span class="about-center__partners__title">Наши партнеры</span>
+						<span class="about-center__partners__separator"></span>
+					</div>
+					<div class="about-center__partners__slider">
+						<div class="about-center__partners__slider__wrap">
+							<ul class="about-center__partners__slider__content">
+								<li class="about-center__partners__slider__item">
+									<a href="#" class="about-center__partners__slider__link"><img src="f/i/partners/partner1.jpg" class="about-center__partners__slider__image"/></a>
+								</li>
+								<li class="about-center__partners__slider__item">
+									<a href="#" class="about-center__partners__slider__link"><img src="f/i/partners/partner3.jpg" class="about-center__partners__slider__image"/></a>
+								</li>
+								<li class="about-center__partners__slider__item">
+									<a href="#" class="about-center__partners__slider__link"><img src="f/i/partners/partner4.jpg" class="about-center__partners__slider__image"/></a>
+								</li>
+								<li class="about-center__partners__slider__item">
+									<a href="#" class="about-center__partners__slider__link"><img src="f/i/partners/partner2.jpg" class="about-center__partners__slider__image"/></a>
+								</li>
+								<li class="about-center__partners__slider__item">
+									<a href="#" class="about-center__partners__slider__link"><img src="f/i/partners/partner3.jpg" class="about-center__partners__slider__image"/></a>
+								</li>
+							</ul>
+							<span class="about-center__partners__slider__prev"></span>
+							<span class="about-center__partners__slider__next"></span>
 						</div>
-					</div>
-					<div class="b-catalog__section">
-						<span class="b-catalog__sep b-catalog__sep_3"></span>
-						<div class="b-catalog__holder">
-							<div class="b-catalog__item b-catalog__item_descr">
-								<p class="b-catalog__item-title">Лиственница</p>
-								<p class="b-catalog__item-text">Самая распространённая порода деревьев на планете и в России. В Сибири и на Дальнем Востоке России занимает огромные площади, где произрастает от юга Приморья до северных границ.</p>
-								<a href="#" class="arrowed-link">Подробнее</a>
-							</div><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/1.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Glauca Globosa», Глаука Глобоза</span>
-									<span class="b-catalog__price">от <b>4100 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/2.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Glauca», Глаука</span>
-									<span class="b-catalog__price">от <b>3200 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a><a href="#" class="b-catalog__item">
-								<span class="b-catalog__item-holder">
-									<span class="b-catalog__img"><img src="f/i/catalog/3.jpg" alt=""></span>
-									<span class="b-catalog__name">Ель колючая «Koster», Костер</span>
-									<span class="b-catalog__price">от <b>2450 </b><b class="rub">&#8399;</b></span>
-								</span>
-							</a>
-						</div>
-					</div>
+					</div>		
 				</div>
 			</div>
 			<div class="bottom-map">
