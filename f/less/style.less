@@ -1831,30 +1831,42 @@ input[type=number] {
 	border-bottom: 2px solid #ede4ce;
 	border-top: 2px solid #ede4ce;
 	padding: 20px 0 50px;
-	&__title {
-		.serif__italic(30px);
-		line-height: 40px;
-		text-align: center;
-		margin: 0 0 30px;
-		font-weight: normal;
-	}
-	&__text {
-		color: #6b7377;
-    font-family: "PT Sans";
-    font-size: 14px;
-    line-height: 25px;
-    margin: 0 0 40px;
-    &_bottom_30 {
-    	margin-bottom: 30px;
-    }
-	}
-	&__subtitle {
-		color: #1d2225;
-    font-family: "PT Serif";
-    font-size: 20px;
-    font-style: italic;
-    letter-spacing: 0.05em;
-    line-height: 20px;
-    margin: 0 0 20px;
-	}
+}
+.b-title {
+	.serif__italic(30px);
+	line-height: 40px;
+	text-align: center;
+	margin: 0 0 30px;
+	font-weight: normal;
+}
+.b-text {
+	color: #6b7377;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 0 40px;
+  &_bottom_30 {
+  	margin-bottom: 30px;
+  }
+  & b {
+  	color: #1d2225;
+	  font-family: "PT Serif";
+	  font-style: italic;
+	  letter-spacing: 0.05em;
+	  font-size: 16px;
+	  font-weight: normal;
+  }
+}
+.b-subtitle {
+	color: #1d2225;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+  margin: 0 0 20px;
+  &_small {
+  	font-size: 16px;
+  	margin-bottom: 16px;
+  }
 }
