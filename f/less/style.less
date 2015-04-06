@@ -633,9 +633,6 @@ input[type=number] {
 	margin: 45px auto 30px;
 	text-align: center;
 	padding: 0 30px;
-	&__detail {
-		
-	}
 	&__title{
 		.serif__italic(30px);
 		letter-spacing: .1px;
@@ -821,12 +818,12 @@ input[type=number] {
 			.link;
 			letter-spacing: .8px;
 			position: absolute;
-			left: -175px;
+			left: -170px;
 			top: 190px;
 			&:before {
 				content: '';
 				position: absolute;
-				right: -60px;
+				right: -50px;
 				top: 2px;
 				width: 38px;
 				height: 14px;
@@ -923,6 +920,7 @@ input[type=number] {
 	&_active {
 		max-height: 5000px;
 		.transition(max-height, .8s, ease-in-out);
+		overflow: visible;
 	}
 
 }
